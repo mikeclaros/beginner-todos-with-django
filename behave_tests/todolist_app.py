@@ -11,7 +11,6 @@ import environ
 NO_SUCH_ELEMENT_ERROR = "NoSuchElementException Raised!"
 
 
-# Scenario: A user is logged in and wants to access todo list
 def _help_get_email():
     from urllib.parse import urlparse
     import glob
@@ -75,10 +74,6 @@ def step_impl(context):
         context.test.fail("NoSuchElementException Raised!")
 
 
-# Scenario: A user wants to add an item to their todo list
-# Given user is logged in and verified
-
-
 def try_wrapper(fn):
     def mod_fn(context, *args, **kwargs):
         try:
@@ -117,7 +112,6 @@ def step_impl(context):
 TODO_ENTRY = "a todo item"
 
 
-# Scenario: A user wants to create a new todo list
 MAX_WAIT = 20
 
 
